@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Results</title>
+</head>
+<body>
+<h1>Here is the list</h1>
+<form method="POST" th:object="${result}">
+    <table border = "1">
+        <tr><th>Date, Age , Available Slots , VaccineName</th></tr>
+        <tr th:each="r: ${finalresult}">
+        <td th:text="${r}" />
+    </tr>
+    </table>
+</form>
+</body>
+</html>
