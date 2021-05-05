@@ -1,0 +1,1 @@
+web: java -jar target/conwinapp-1.0.jar
