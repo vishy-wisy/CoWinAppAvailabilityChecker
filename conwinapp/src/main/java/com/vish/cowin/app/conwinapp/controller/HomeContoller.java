@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class HomeContoller
 {
-    @GetMapping("/index")
+    @GetMapping("/")
     public String showLoginPage(Model model)
     {
         return "search";
